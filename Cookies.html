@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nessan Kukis</title>
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FFF8EE;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+        header {
+            padding: 30px 50px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 150px;
+            color: #4A2C20;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .Navbar {
+            display: flex;
+            gap: 35px;
+        }
+
+        .Navbar a {
+            color: #4A2C20;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .Navbar a:hover {
+            color: #7a4e35;
+        }
+
+        
+        .Hero {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 50px;
+            background: #FFF8EE;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 54px;
+            color: #4a2c20;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .Hero p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #33231c;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 200px;
+            height: 60px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #7a4e35;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5c3a26;
+        }
+
+        /* Products Section */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .product-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(74, 44, 32, 0.05);
+        }
+
+        .product-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #4a2c20;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #7a4e35;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nessan Kukis</h1> 
+        <div class="Navbar"> 
+            <a href="Index.html" class="Home">Home</a> 
+            <a href="Cookies.html" class="Cookies">Cookies</a> 
+            <a href="About.html" class="about">About</a> 
+            <a href="Contact.html" class="Contact">Contact</a> 
+        </div>
+    </header>
+
+    <main>
+        <div class="Hero"> 
+            <h2>Our cookies</h2> 
+            <p>Discover our delicious collection of homemade cookies.</p> 
+            <a href="Cookies.html">
+                <button>Shop Now</button> 
+            </a>
+        </div> 
+
+        <div class="product-container"> 
+            <div class="product-card"> 
+                <h3>Chocolate Chip</h3> 
+                <p>RM25</p> 
+            </div> 
+            <div class="product-card"> 
+                <h3>Black Cookies</h3> 
+                <p>RM25</p> 
+            </div> 
+        </div> 
+    </main>
+
+</body>
+</html>
