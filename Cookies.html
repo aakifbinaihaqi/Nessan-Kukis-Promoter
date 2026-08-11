@@ -1,15 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nessan Kukis</title>
-    
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
+    <title>Batik Cake</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -21,7 +27,9 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        
+
+        /* HEADER */
+
         header {
             padding: 30px 50px;
         }
@@ -33,6 +41,9 @@
             font-weight: 700;
             margin-bottom: 20px;
         }
+
+
+        
 
         .Navbar {
             display: flex;
@@ -52,15 +63,20 @@
             color: #7a4e35;
         }
 
-        
+
+        /* HERO */
+
         .Hero {
             width: 100%;
             min-height: 400px;
+
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+
             padding: 0 50px;
+
             background: #FFF8EE;
         }
 
@@ -80,16 +96,24 @@
             margin-bottom: 30px;
         }
 
+
+        /* BUTTON */
+
         button {
             width: 200px;
             height: 60px;
+
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
+
             color: #ffffff;
             background-color: #7a4e35;
+
             border: none;
             border-radius: 30px;
+
             cursor: pointer;
+
             transition: background-color 0.3s ease;
         }
 
@@ -97,67 +121,270 @@
             background-color: #5c3a26;
         }
 
-        /* Products Section */
+
+        
+
         .product-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+
             gap: 30px;
+
             padding: 50px;
         }
 
+
+        /* PRODUCT CARD */
+
         .product-card {
             background-color: #FFFFFF;
+
             padding: 30px;
+
             border-radius: 18px;
-            box-shadow: 0 4px 15px rgba(74, 44, 32, 0.05);
+
+            box-shadow:
+                0 4px 15px rgba(74, 44, 32, 0.08);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
         }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 8px 20px rgba(74, 44, 32, 0.12);
+        }
+
 
         .product-card h3 {
             font-family: 'Playfair Display', serif;
+
             font-size: 28px;
+
             color: #4a2c20;
-            margin-bottom: 10px;
+
+            margin-bottom: 12px;
         }
 
         .product-card p {
             font-size: 18px;
+
             color: #7a4e35;
+
             font-weight: 600;
+
+            margin-bottom: 10px;
         }
+
+        .product-card .description {
+            font-size: 15px;
+
+            color: #6b554b;
+
+            line-height: 1.6;
+        }
+
+
+        /* PHONE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 65px;
+            }
+
+            .Navbar {
+                gap: 18px;
+                flex-wrap: wrap;
+            }
+
+            .Navbar a {
+                font-size: 17px;
+            }
+
+            .Hero {
+                min-height: 400px;
+                padding: 40px 25px;
+            }
+
+            h2 {
+                font-size: 42px;
+            }
+
+            .Hero p {
+                font-size: 17px;
+            }
+
+            .product-container {
+                padding: 25px;
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* SMALL PHONE */
+
+        @media (max-width: 400px) {
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .Navbar {
+                gap: 12px;
+            }
+
+            .Navbar a {
+                font-size: 15px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            .Hero p {
+                font-size: 15px;
+            }
+
+        }
+
     </style>
+
 </head>
+
+
 <body>
 
+
+  
+
     <header>
-        <h1>Nessan Kukis</h1> 
-        <div class="Navbar"> 
-            <a href="Index.html" class="Home">Home</a> 
-            <a href="Cookies.html" class="Cookies">Cookies</a> 
-            <a href="About.html" class="about">About</a> 
-            <a href="Contact.html" class="Contact">Contact</a> 
+
+        <h1>
+            Batik Cake
+        </h1>
+
+
+        <div class="Navbar">
+
+            <a href="Index.html">
+                Home
+            </a>
+
+            <a href="BatikCake.html">
+                Batik Cake
+            </a>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
         </div>
+
     </header>
 
-    <main>
-        <div class="Hero"> 
-            <h2>Our cookies</h2> 
-            <p>Discover our delicious collection of homemade cookies.</p> 
-            <a href="Cookies.html">
-                <button>Shop Now</button> 
-            </a>
-        </div> 
 
-        <div class="product-container"> 
-            <div class="product-card"> 
-                <h3>Chocolate Chip</h3> 
-                <p>RM25</p> 
-            </div> 
-            <div class="product-card"> 
-                <h3>Black Cookies</h3> 
-                <p>RM25</p> 
-            </div> 
-        </div> 
+
+   
+
+    <main>
+
+
+    
+
+        <div class="Hero">
+
+            <h2>
+                Our Batik Cake
+            </h2>
+
+            <p>
+                Discover our delicious homemade Batik Cake,
+                made with rich chocolate and crunchy biscuits.
+            </p>
+
+            <a href="Contact.html">
+
+                <button>
+                    Order Now
+                </button>
+
+            </a>
+
+        </div>
+
+
+
+
+        <div class="product-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <h3>
+                    Chocolate Cream Batik Cake
+                </h3>
+
+                <p>
+                    RM15
+                </p>
+
+                <p class="description">
+                    A delicious Batik Cake with a smooth
+                    chocolate cream layer, rich chocolate
+                    flavour and crunchy biscuit pieces.
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <h3>
+                    Classic Batik Cake
+                </h3>
+
+                <p>
+                    RM15
+                </p>
+
+                <p class="description">
+                    A classic homemade Batik Cake made
+                    with rich chocolate and crunchy
+                    biscuit pieces, without the chocolate
+                    cream layer.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
     </main>
 
+
 </body>
+
 </html>
+
