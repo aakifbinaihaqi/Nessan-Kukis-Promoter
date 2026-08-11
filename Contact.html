@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Batik Cake</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FFF8EE;
+            font-family: 'Poppins', sans-serif;
+            color: #33231c;
+        }
+
+
+        /* HEADER */
+
+        header {
+            padding: 30px 50px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 150px;
+            color: #4A2C20;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+
+       
+
+        .Navbar {
+            display: flex;
+            gap: 35px;
+        }
+
+        .Navbar a {
+            color: #4A2C20;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .Navbar a:hover {
+            color: #7a4e35;
+        }
+
+
+       
+
+        .ContactSection {
+            min-height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 70px 8%;
+        }
+
+        .ContactSection h2 {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 64px;
+
+            color: #4A2C20;
+
+            margin-bottom: 20px;
+        }
+
+        .ContactSection > p {
+            max-width: 800px;
+
+            font-size: 19px;
+
+            line-height: 1.8;
+
+            color: #5c4438;
+
+            margin-bottom: 35px;
+        }
+
+
+      
+
+        .ContactContainer {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 30px;
+
+            max-width: 1000px;
+        }
+
+        .ContactCard {
+            background-color: #FFFFFF;
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 4px 15px rgba(74, 44, 32, 0.08);
+
+            transition: transform 0.3s ease;
+        }
+
+        .ContactCard:hover {
+            transform: translateY(-5px);
+        }
+
+        .ContactCard h3 {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 30px;
+
+            color: #4A2C20;
+
+            margin-bottom: 15px;
+        }
+
+        .ContactCard p {
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            color: #6b554b;
+        }
+
+
+      
+
+        .ContactCard a {
+            color: #7a4e35;
+
+            text-decoration: none;
+
+            font-weight: 600;
+        }
+
+        .ContactCard a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .OrderButton {
+            display: inline-block;
+
+            margin-top: 35px;
+
+            padding: 16px 35px;
+
+            background-color: #7a4e35;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            font-weight: 500;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+        .OrderButton:hover {
+            background-color: #5c3a26;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 35px 20px;
+
+            color: #7a4e35;
+
+            font-size: 14px;
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 900px) {
+
+            header {
+                padding: 25px 35px;
+            }
+
+            h1 {
+                font-size: 90px;
+            }
+
+            .Navbar {
+                gap: 22px;
+            }
+
+            .Navbar a {
+                font-size: 19px;
+            }
+
+            .ContactSection {
+                padding: 60px 6%;
+            }
+
+            .ContactSection h2 {
+                font-size: 52px;
+            }
+
+        }
+
+
+        /* PHONE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .Navbar {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .Navbar a {
+                font-size: 16px;
+            }
+
+            .ContactSection {
+                padding: 50px 25px;
+            }
+
+            .ContactSection h2 {
+                font-size: 42px;
+            }
+
+            .ContactSection > p {
+                font-size: 16px;
+            }
+
+            .ContactContainer {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* SMALL PHONE */
+
+        @media (max-width: 400px) {
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .Navbar {
+                gap: 10px;
+            }
+
+            .Navbar a {
+                font-size: 14px;
+            }
+
+            .ContactSection h2 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>
+            Batik Cake
+        </h1>
+
+
+        <div class="Navbar">
+
+            <a href="Index.html">
+                Home
+            </a>
+
+            <a href="BatikCake.html">
+                Batik Cake
+            </a>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- CONTACT -->
+
+    <main>
+
+        <section class="ContactSection">
+
+            <h2>
+                Get In Touch
+            </h2>
+
+            <p>
+                Interested in ordering our delicious Batik Cake?
+                Contact us today for orders, enquiries and more
+                information.
+            </p>
+
+
+            <div class="ContactContainer">
+
+
+                <div class="ContactCard">
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+                        You can contact us directly through
+                        WhatsApp or phone call.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <a href="tel:+60142714467">
+                            +60 14-271 4467
+                        </a>
+                    </p>
+
+                </div>
+
+
+
+         
+
+                <div class="ContactCard">
+
+                    <h3>
+                        TikTok
+                    </h3>
+
+                    <p>
+                        Follow Makcu Homestay on TikTok
+                        to discover more updates and content.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            Makcu Homestay
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="tel:+60142714467"
+                class="OrderButton"
+            >
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+   
+
+    <footer>
+
+        © Aakif2024 Batik Cake. All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
+
