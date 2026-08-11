@@ -1,0 +1,409 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Batik Cake</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FFF8EE;
+            font-family: 'Poppins', sans-serif;
+            color: #33231c;
+        }
+
+
+        /* HEADER */
+
+        header {
+            padding: 30px 50px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 150px;
+            color: #4A2C20;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+
+        /* NAVBAR */
+
+        .Navbar {
+            display: flex;
+            gap: 35px;
+        }
+
+        .Navbar a {
+            color: #4A2C20;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .Navbar a:hover {
+            color: #7a4e35;
+        }
+
+
+        /* ABOUT HERO */
+
+        .AboutHero {
+            min-height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 70px 8%;
+        }
+
+        .AboutHero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            color: #4A2C20;
+            line-height: 1.1;
+
+            margin-bottom: 25px;
+        }
+
+        .AboutHero p {
+            max-width: 900px;
+
+            font-size: 19px;
+            line-height: 1.8;
+
+            color: #5c4438;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* STORY */
+
+        .Story {
+            display: grid;
+
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(280px, 1fr)
+            );
+
+            gap: 30px;
+
+            padding: 50px;
+        }
+
+        .StoryCard {
+            background-color: #FFFFFF;
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 4px 15px rgba(74, 44, 32, 0.08);
+
+            transition: transform 0.3s ease;
+        }
+
+        .StoryCard:hover {
+            transform: translateY(-5px);
+        }
+
+        .StoryCard h3 {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 30px;
+
+            color: #4A2C20;
+
+            margin-bottom: 15px;
+        }
+
+        .StoryCard p {
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            color: #6b554b;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 35px 20px;
+
+            color: #7a4e35;
+
+            font-size: 14px;
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 900px) {
+
+            header {
+                padding: 25px 35px;
+            }
+
+            h1 {
+                font-size: 90px;
+            }
+
+            .Navbar {
+                gap: 22px;
+            }
+
+            .Navbar a {
+                font-size: 19px;
+            }
+
+            .AboutHero {
+                padding: 60px 6%;
+            }
+
+            .AboutHero h2 {
+                font-size: 52px;
+            }
+
+        }
+
+
+        /* PHONE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .Navbar {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .Navbar a {
+                font-size: 16px;
+            }
+
+            .AboutHero {
+                padding: 50px 25px;
+            }
+
+            .AboutHero h2 {
+                font-size: 42px;
+            }
+
+            .AboutHero p {
+                font-size: 16px;
+            }
+
+            .Story {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+
+        }
+
+
+        /* SMALL PHONE */
+
+        @media (max-width: 400px) {
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .Navbar {
+                gap: 10px;
+            }
+
+            .Navbar a {
+                font-size: 14px;
+            }
+
+            .AboutHero h2 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>
+            Batik Cake
+        </h1>
+
+
+        <div class="Navbar">
+
+            <a href="Index.html">
+                Home
+            </a>
+
+            <a href="BatikCake.html">
+                Batik Cake
+            </a>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ABOUT -->
+
+    <main>
+
+
+        <section class="AboutHero">
+
+            <h2>
+                Our Story
+            </h2>
+
+            <p>
+                Batik Cake was founded by
+                <strong>Siti Nurul Jannah Binti Mohd Khalil</strong>
+                in 2024 with a simple idea:
+                to create delicious homemade Batik Cake
+                that brings people together.
+            </p>
+
+            <p>
+                What started as a small passion for making
+                homemade desserts has grown into a brand
+                dedicated to creating sweet moments for
+                families, friends and loved ones.
+            </p>
+
+            <p>
+                We believe that great desserts do not need
+                to be complicated. With quality ingredients,
+                careful preparation and a lot of passion,
+                every Batik Cake is made to be enjoyed
+                from the very first bite to the last.
+            </p>
+
+        </section>
+
+
+
+        <!-- STORY CARDS -->
+
+        <section class="Story">
+
+
+            <div class="StoryCard">
+
+                <h3>
+                    Our Beginning
+                </h3>
+
+                <p>
+                    Founded in 2024, Batik Cake began with
+                    a passion for creating a homemade dessert
+                    that is simple, delicious and memorable.
+                </p>
+
+            </div>
+
+
+
+            <div class="StoryCard">
+
+                <h3>
+                    Our Mission
+                </h3>
+
+                <p>
+                    Our mission is to serve delicious Batik Cake
+                    made with carefully selected ingredients
+                    while providing a warm and enjoyable
+                    experience for every customer.
+                </p>
+
+            </div>
+
+
+
+            <div class="StoryCard">
+
+                <h3>
+                    Our Promise
+                </h3>
+
+                <p>
+                    We always aim to maintain great taste,
+                    consistent quality and fresh products.
+                    Every cake is prepared with care and
+                    attention to detail.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2024 Batik Cake. All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
+```
